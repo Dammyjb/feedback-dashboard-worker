@@ -1,0 +1,16 @@
+name = "feedback-dashboard-worker"
+main = "src/index.ts"
+compatibility_date = "2024-10-28"
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "FEEDBACK_DB"
+database_name = "feedback-db"
+database_id = "0462e778-08a2-43ce-94ea-6c996c0d92d5"
+
+[[kv_namespaces]]
+binding = "SUMMARY_CACHE"
+id = "6d0788dc62344954aec9d5eaf617139b"
+preview_id = "replace-with-your-kv-preview-id"

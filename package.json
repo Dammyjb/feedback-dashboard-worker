@@ -1,0 +1,20 @@
+{
+  "name": "feedback-dashboard-worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:setup": "wrangler d1 execute FEEDBACK_DB --file=./schema.sql",
+    "db:seed": "wrangler d1 execute FEEDBACK_DB --file=./seed.sql"
+  },
+  "dependencies": {
+    "hono": "^4.5.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240918.0",
+    "typescript": "^5.6.2",
+    "wrangler": "^3.81.0"
+  }
+}
